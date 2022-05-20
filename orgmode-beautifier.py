@@ -15,11 +15,14 @@ lines2 = []
 for l in lines:
   l = l.lstrip(' ')
   if l.startswith('*'):
-    lines2.append('\n')
+    # lines2.append('\n')
     depth = 0
     while l[depth] == '*':
       depth+=1
-  l = '    ' * (depth-1) + l
+    l = '  ' * (depth-1) + "*" + l.lstrip('*')
+  else:
+    l = '  ' * (depth-1) + l
+  
   lines2.append(l)
 
 #pprint(lines2[:10])
