@@ -6,12 +6,12 @@ Here is a simple tool that reformat org-mode files by auto-indenting them and ad
 ## Installation as user
 
     git clone https://github.com/authmane512/orgmode-beautifier.git
-    cp orgmode-beautifier/orgmode-beautifier.py ~/bin/
+    mv orgmode-beautifier/orgmode-beautifier.py ~/bin/orgmode-beautifier
 
 ## Installation as root
 
     git clone https://github.com/authmane512/orgmode-beautifier.git
-    cp orgmode-beautifier/orgmode-beautifier.py /bin/
+    mv orgmode-beautifier/orgmode-beautifier.py /bin/orgmode-beautifier
 
 ## Usage
 
