@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 
 import sys
-from pprint import pprint
+#from pprint import pprint
 
 with open(sys.argv[1], 'r') as f:
   lines = f.readlines()
 
-pprint(lines[:10])
+#pprint(lines[:10])
 
 lines = [l for l in lines if l != '\n']
 
@@ -22,7 +22,7 @@ for l in lines:
   l = '    ' * (depth-1) + l
   lines2.append(l)
 
-pprint(lines2[:10])
+#pprint(lines2[:10])
 
 with open(sys.argv[2], 'w') as f:
   f.write(''.join(lines2))
